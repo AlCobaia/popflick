@@ -9,20 +9,20 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #121212; /* Fundo escuro */
-            color: #e0e0e0; /* Cor clara para o texto */
+            background-color: #121212;
+            color: #e0e0e0;
             margin: 0;
             padding: 0;
         }
 
         header {
-            background-image: url('C:/Users/Allan/OneDrive/Área de Trabalho/Imagens/popflick-filmes-interativos.jpg');
-            background-size: contain; /* Ajusta a imagem para caber dentro do cabeçalho */
-            background-position: center; /* Centraliza a imagem */
-            background-repeat: no-repeat; /* Evita que a imagem se repita */
+            background-image: url('popflick-filmes-interativos.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             width: 100%;
-            height: 60vh; /* Ajusta a altura do cabeçalho para 60% da altura da tela */
-            margin: 0; /* Remove qualquer margem que possa afetar o layout */
+            height: 60vh;
+            margin: 0;
         }
 
         .header-content {
@@ -30,13 +30,13 @@
             justify-content: center;
             align-items: center;
             height: 100%;
-            text-align: center; /* Centraliza o texto */
+            text-align: center;
         }
 
         h1 {
             font-size: 3em;
             margin: 0;
-            color: transparent; /* Remove a cor do texto */
+            color: transparent;
         }
 
         .content {
@@ -45,7 +45,7 @@
         }
 
         h2 {
-            color: #fff; /* Títulos das seções em branco para destacar no fundo escuro */
+            color: #fff;
         }
 
         .features {
@@ -56,7 +56,7 @@
         }
 
         .feature {
-            background-color: #333; /* Cor de fundo das caixas de funcionalidades */
+            background-color: #333;
             padding: 20px;
             border-radius: 10px;
             margin: 10px;
@@ -71,7 +71,7 @@
 
         .feature h2 {
             font-size: 1.5em;
-            color: #ffdd57; /* Cor dos títulos das funcionalidades */
+            color: #ffdd57;
         }
 
         .slider {
@@ -97,17 +97,28 @@
         }
 
         @keyframes slide {
-            0% { transform: translateX(0%); }
-            33% { transform: translateX(-33.3333%); }
-            66% { transform: translateX(-66.6666%); }
-            100% { transform: translateX(0%); }
+            0% {
+                transform: translateX(0%);
+            }
+
+            33% {
+                transform: translateX(-33.3333%);
+            }
+
+            66% {
+                transform: translateX(-66.6666%);
+            }
+
+            100% {
+                transform: translateX(0%);
+            }
         }
 
         .plans {
             display: flex;
             justify-content: space-around;
             padding: 20px;
-            background-color: #1e1e1e; /* Cor de fundo das seções de planos */
+            background-color: #1e1e1e;
             border-top: 1px solid #333;
         }
 
@@ -117,34 +128,38 @@
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
             text-align: center;
-            background-color: #333; /* Cor de fundo das colunas de planos */
+            background-color: #333;
         }
 
         .plan h3 {
             font-size: 1.8em;
             margin-bottom: 10px;
-            color: #ffdd57; /* Cor dos títulos dos planos */
+            color: #ffdd57;
         }
 
         .plan p {
             font-size: 1em;
-            color: #ccc; /* Cor do texto dos planos */
+            color: #ccc;
         }
 
         .plan .price {
             font-size: 1.5em;
-            color: #fff; /* Cor dos preços */
+            color: #fff;
             margin-bottom: 15px;
         }
 
         .section-title {
             font-size: 2em;
             font-weight: bold;
-            color: #fff; /* Cor do título */
-            margin: 40px 0; /* Espaçamento acima e abaixo do título */
+            color: #fff;
+            margin: 40px 0;
         }
 
         @media (max-width: 768px) {
+            header {
+                height: 40vh;
+            }
+
             .feature {
                 flex-basis: 100%;
             }
@@ -178,9 +193,9 @@
                 <h2>Personalize o Visual</h2>
                 <div class="slider">
                     <div class="slides">
-                        <img src="C:/Users/Allan/OneDrive/Área de Trabalho/Imagens/visual1.jpg" alt="Visual 1">
-                        <img src="C:/Users/Allan/OneDrive/Área de Trabalho/Imagens/visual2.jpg" alt="Visual 2">
-                        <img src="C:/Users/Allan/OneDrive/Área de Trabalho/Imagens/visual3.jpg" alt="Visual 3">
+                        <img src="visual1.jpg" alt="Visual 1">
+                        <img src="visual2.jpg" alt="Visual 2">
+                        <img src="visual3.jpg" alt="Visual 3">
                     </div>
                 </div>
                 <p>Veja suas escolhas de roupas ganharem vida nos personagens!</p>
@@ -190,9 +205,9 @@
                 <h2>Decida o Destino</h2>
                 <div class="slider">
                     <div class="slides">
-                        <img src="C:/Users/Allan/OneDrive/Área de Trabalho/Imagens/destino1.jpg" alt="Destino 1">
-                        <img src="C:/Users/Allan/OneDrive/Área de Trabalho/Imagens/destino2.jpg" alt="Destino 2">
-                        <img src="C:/Users/Allan/OneDrive/Área de Trabalho/Imagens/destino3.jpg" alt="Destino 3">
+                        <img src="destino1.jpg" alt="Destino 1">
+                        <img src="destino2.jpg" alt="Destino 2">
+                        <img src="destino3.jpg" alt="Destino 3">
                     </div>
                 </div>
                 <p>Você decide o rumo da história! Faça escolhas e mude o caminho dos personagens.</p>
@@ -202,9 +217,9 @@
                 <h2>Escolha o Par Romântico</h2>
                 <div class="slider">
                     <div class="slides">
-                        <img src="C:/Users/Allan/OneDrive/Área de Trabalho/Imagens/romantico1.jpg" alt="Romântico 1">
-                        <img src="C:/Users/Allan/OneDrive/Área de Trabalho/Imagens/romantico2.jpg" alt="Romântico 2">
-                        <img src="C:/Users/Allan/OneDrive/Área de Trabalho/Imagens/romantico3.jpg" alt="Romântico 3">
+                        <img src="romantico1.jpg" alt="Romântico 1">
+                        <img src="romantico2.jpg" alt="Romântico 2">
+                        <img src="romantico3.jpg" alt="Romântico 3">
                     </div>
                 </div>
                 <p>Crie histórias de amor únicas, selecionando os pares românticos dos personagens!</p>
@@ -214,9 +229,9 @@
                 <h2>Viagem Espacial</h2>
                 <div class="slider">
                     <div class="slides">
-                        <img src="C:/Users/Allan/OneDrive/Área de Trabalho/Imagens/espaco1.jpg" alt="Espaço 1">
-                        <img src="C:/Users/Allan/OneDrive/Área de Trabalho/Imagens/espaco2.jpg" alt="Espaço 2">
-                        <img src="C:/Users/Allan/OneDrive/Área de Trabalho/Imagens/espaco3.jpg" alt="Espaço 3">
+                        <img src="espaco1.jpg" alt="Espaço 1">
+                        <img src="espaco2.jpg" alt="Espaço 2">
+                        <img src="espaco3.jpg" alt="Espaço 3">
                     </div>
                 </div>
                 <p>Explore galáxias distantes e viva aventuras épicas em outros mundos.</p>
@@ -226,9 +241,9 @@
                 <h2>Volta no Tempo</h2>
                 <div class="slider">
                     <div class="slides">
-                        <img src="C:/Users/Allan/OneDrive/Área de Trabalho/Imagens/voltanotempo1.jpg" alt="Volta no Tempo 1">
-                        <img src="C:/Users/Allan/OneDrive/Área de Trabalho/Imagens/voltanotempo2.jpg" alt="Volta no Tempo 2">
-                        <img src="C:/Users/Allan/OneDrive/Área de Trabalho/Imagens/voltanotempo3.jpg" alt="Volta no Tempo 3">
+                        <img src="voltanotempo1.jpg" alt="Volta no Tempo 1">
+                        <img src="voltanotempo2.jpg" alt="Volta no Tempo 2">
+                        <img src="voltanotempo3.jpg" alt="Volta no Tempo 3">
                     </div>
                 </div>
                 <p>Mude eventos históricos e crie novas realidades ao voltar no tempo!</p>
@@ -238,9 +253,9 @@
                 <h2>Pura Adrenalina</h2>
                 <div class="slider">
                     <div class="slides">
-                        <img src="C:/Users/Allan/OneDrive/Área de Trabalho/Imagens/adrenalina1.jpg" alt="Adrenalina 1">
-                        <img src="C:/Users/Allan/OneDrive/Área de Trabalho/Imagens/adrenalina2.jpg" alt="Adrenalina 2">
-                        <img src="C:/Users/Allan/OneDrive/Área de Trabalho/Imagens/adrenalina3.jpg" alt="Adrenalina 3">
+                        <img src="adrenalina1.jpg" alt="Adrenalina 1">
+                        <img src="adrenalina2.jpg" alt="Adrenalina 2">
+                        <img src="adrenalina3.jpg" alt="Adrenalina 3">
                     </div>
                 </div>
                 <p>Participe de cenas eletrizantes onde cada segundo conta!</p>
@@ -253,16 +268,19 @@
             <div class="plan">
                 <h3>Grátis</h3>
                 <p>Filmes/séries com comerciais, limitação nas interações - 5 por dia.</p>
+                <div class="price">R$ 0,00</div>
             </div>
+
             <div class="plan">
-                <h3>BÁSICO</h3>
-                <p class="price">$20,90</p>
+                <h3>Pop+</h3>
                 <p>Sem anúncios, interações ilimitadas para você se divertir com seus amigos e familiares. Além disso, scaneie sua face e seja um personagem.</p>
+                <div class="price">R$ 29,90/mês</div>
             </div>
+
             <div class="plan">
-                <h3>PREMIUM</h3>
-                <p class="price">$45,90</p>
-                <p>Sem anúncios, interações ilimitadas, escaneamento facial e acesso a utilização do óculos de realidade virtual para uma grande imersão no mundo dos filmes.</p>
+                <h3>Pop Premium</h3>
+                <p>Sem anúncios, interações ilimitadas, escaneamento facial e utilização do modo em primeira pessoa com uso de óculos de realidade virtual.</p>
+                <div class="price">R$ 59,90/mês</div>
             </div>
         </div>
     </div>
